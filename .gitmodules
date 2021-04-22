@@ -1,0 +1,3 @@
+[submodule "Berry/vendor/spdlog"]
+	path = Berry/vendor/spdlog
+	url = https://github.com/gabime/spdlog

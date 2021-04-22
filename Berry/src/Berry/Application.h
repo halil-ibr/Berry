@@ -4,7 +4,7 @@
 
 namespace Berry
 {
-	class BR_API Application
+	class BERRY_API Application
 	{
 	public:
 		Application();
