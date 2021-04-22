@@ -4,6 +4,9 @@
     <Filter Include="Berry">
       <UniqueIdentifier>{C9A7E20C-35BC-0ABE-FE3D-AE1D6A1107EF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Berry\Events">
+      <UniqueIdentifier>{8D97A6B7-79FA-355C-2280-6E120EC201DF}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Berry.h" />
@@ -16,9 +19,25 @@
     <ClInclude Include="src\Berry\EntryPoint.h">
       <Filter>Berry</Filter>
     </ClInclude>
+    <ClInclude Include="src\Berry\Events\ApplicationEvent.h">
+      <Filter>Berry\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Berry\Events\Event.h">
+      <Filter>Berry\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Berry\Events\KeyEvent.h">
+      <Filter>Berry\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Berry\Events\MouseEvent.h">
+      <Filter>Berry\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Berry\Events\WindowEvent.h">
+      <Filter>Berry\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Berry\Log.h">
       <Filter>Berry</Filter>
     </ClInclude>
+    <ClInclude Include="src\brpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Berry\Application.cpp">
@@ -27,5 +46,6 @@
     <ClCompile Include="src\Berry\Log.cpp">
       <Filter>Berry</Filter>
     </ClCompile>
+    <ClCompile Include="src\brpch.cpp" />
   </ItemGroup>
 </Project>

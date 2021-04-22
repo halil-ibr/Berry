@@ -17,6 +17,9 @@ project "Berry"
     language "C++"
     staticruntime "On"
 
+    pchheader "brpch.h"
+    pchsource "Berry/src/brpch.cpp"
+
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 

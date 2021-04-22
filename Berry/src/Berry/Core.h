@@ -9,3 +9,5 @@
 #else
 	#error Berry doesn't support your platform!
 #endif
+
+#define BIT(x) (1 << x)

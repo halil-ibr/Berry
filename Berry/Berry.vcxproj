@@ -76,7 +76,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>brpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>BR_PLATFORM_WINDOWS;BR_BUILD_DLL;BR_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -96,7 +97,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>brpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>BR_PLATFORM_WINDOWS;BR_BUILD_DLL;BR_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -120,7 +122,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>brpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>BR_PLATFORM_WINDOWS;BR_BUILD_DLL;BR_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -147,11 +150,20 @@
     <ClInclude Include="src\Berry\Application.h" />
     <ClInclude Include="src\Berry\Core.h" />
     <ClInclude Include="src\Berry\EntryPoint.h" />
+    <ClInclude Include="src\Berry\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Berry\Events\Event.h" />
+    <ClInclude Include="src\Berry\Events\KeyEvent.h" />
+    <ClInclude Include="src\Berry\Events\MouseEvent.h" />
+    <ClInclude Include="src\Berry\Events\WindowEvent.h" />
     <ClInclude Include="src\Berry\Log.h" />
+    <ClInclude Include="src\brpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Berry\Application.cpp" />
     <ClCompile Include="src\Berry\Log.cpp" />
+    <ClCompile Include="src\brpch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
