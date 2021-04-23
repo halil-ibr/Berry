@@ -2,6 +2,9 @@
 
 #include "Berry/Core.h"
 
+#include <string>
+#include <sstream>
+
 namespace Berry
 {
 	enum class EventType

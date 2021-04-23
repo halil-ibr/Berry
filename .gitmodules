@@ -1,3 +1,6 @@
 [submodule "Berry/vendor/spdlog"]
 	path = Berry/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Berry/vendor/GLFW"]
+	path = Berry/vendor/GLFW
+	url = https://github.com/TheCherno/GLFW

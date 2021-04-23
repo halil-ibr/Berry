@@ -7,6 +7,9 @@
     <Filter Include="Berry\Events">
       <UniqueIdentifier>{8D97A6B7-79FA-355C-2280-6E120EC201DF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Berry\Platform">
+      <UniqueIdentifier>{3DB6C857-2984-BC5D-1218-2D84FE8498C2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Berry.h" />
@@ -37,6 +40,12 @@
     <ClInclude Include="src\Berry\Log.h">
       <Filter>Berry</Filter>
     </ClInclude>
+    <ClInclude Include="src\Berry\Platform\WindowsWindow.h">
+      <Filter>Berry\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Berry\Window.h">
+      <Filter>Berry</Filter>
+    </ClInclude>
     <ClInclude Include="src\brpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -45,6 +54,9 @@
     </ClCompile>
     <ClCompile Include="src\Berry\Log.cpp">
       <Filter>Berry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Berry\Platform\WindowsWindow.cpp">
+      <Filter>Berry\Platform</Filter>
     </ClCompile>
     <ClCompile Include="src\brpch.cpp" />
   </ItemGroup>

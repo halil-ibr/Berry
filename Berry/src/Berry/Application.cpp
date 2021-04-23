@@ -8,7 +8,7 @@ namespace Berry
 {
 	Application::Application()
 	{
-
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 	Application::~Application()
@@ -18,9 +18,9 @@ namespace Berry
 
 	void Application::Run()
 	{
-		WindowMovedEvent e(100, 100);
-		BR_CORE_INFO(e);
-
-		while (true);
+		while (m_Running)
+		{
+			m_Window->OnUpdate();
+		}
 	}
 }
